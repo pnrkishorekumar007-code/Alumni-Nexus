@@ -1,0 +1,278 @@
+[
+  {
+    "id": "alumni-001",
+    "name": "Arjun Krishnamurthy",
+    "email": "arjun.k@srmalumni.org",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun",
+    "coverImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=400&fit=crop",
+    "department": "Computer Science & Engineering",
+    "batch": 2015,
+    "degree": "B.Tech CSE",
+    "currentRole": "Senior Engineering Manager",
+    "company": "Google",
+    "location": "Bangalore, India",
+    "country": "India",
+    "skills": ["React", "Cloud Architecture", "Product Management", "Python"],
+    "experience": 9,
+    "bio": "SRM CSE graduate passionate about building scalable systems and mentoring the next generation of engineers. Led teams at Google Cloud Platform division.",
+    "linkedin": "https://linkedin.com/in/arjunkrishnamurthy",
+    "github": "https://github.com/arjunkrish",
+    "achievements": ["Google Peer Bonus Award 2024", "SRM Distinguished Alumni 2023", "Published 3 patents in distributed systems"],
+    "certifications": [
+      { "name": "Google Cloud Professional Architect", "issuer": "Google", "year": 2022 },
+      { "name": "AWS Solutions Architect", "issuer": "Amazon", "year": 2020 }
+    ],
+    "education": [
+      { "degree": "B.Tech Computer Science", "institution": "SRM Institute of Science and Technology", "year": 2015 },
+      { "degree": "M.S. Computer Science", "institution": "Georgia Institute of Technology", "year": 2017 }
+    ],
+    "experienceHistory": [
+      { "role": "Senior Engineering Manager", "company": "Google", "startYear": 2021, "description": "Leading a team of 25 engineers on cloud infrastructure products." },
+      { "role": "Staff Software Engineer", "company": "Microsoft", "startYear": 2017, "endYear": 2021, "description": "Built Azure DevOps pipeline automation tools." },
+      { "role": "Software Engineer", "company": "Zoho Corporation", "startYear": 2015, "endYear": 2016, "description": "Full-stack development on CRM products." }
+    ],
+    "projects": [
+      { "name": "CloudScale Analytics", "description": "Real-time analytics platform processing 10M events/day", "tech": ["Go", "Kubernetes", "BigQuery"] }
+    ],
+    "featured": true,
+    "hallOfFame": true,
+    "category": "leader"
+  },
+  {
+    "id": "alumni-002",
+    "name": "Priya Venkatesh",
+    "email": "priya.v@srmalumni.org",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya",
+    "coverImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=400&fit=crop",
+    "department": "Electronics & Communication",
+    "batch": 2016,
+    "degree": "B.Tech ECE",
+    "currentRole": "VP of Engineering",
+    "company": "Freshworks",
+    "location": "Chennai, India",
+    "country": "India",
+    "skills": ["Node.js", "DevOps", "UI/UX Design", "Data Analytics"],
+    "experience": 8,
+    "bio": "Building world-class SaaS products from Chennai. Active mentor for SRM ECE students interested in product engineering careers.",
+    "linkedin": "https://linkedin.com/in/priyavenkatesh",
+    "achievements": ["Freshworks Star Performer 2023", "Women in Tech Leadership Award", "SRM Alumni Mentor of the Year 2024"],
+    "certifications": [
+      { "name": "Certified Scrum Master", "issuer": "Scrum Alliance", "year": 2019 }
+    ],
+    "education": [
+      { "degree": "B.Tech Electronics & Communication", "institution": "SRM Institute of Science and Technology", "year": 2016 }
+    ],
+    "experienceHistory": [
+      { "role": "VP of Engineering", "company": "Freshworks", "startYear": 2022, "description": "Leading platform engineering for Freshdesk product suite." },
+      { "role": "Engineering Director", "company": "Freshworks", "startYear": 2019, "endYear": 2022, "description": "Scaled engineering team from 20 to 80 members." },
+      { "role": "Senior Software Engineer", "company": "Cognizant", "startYear": 2016, "endYear": 2019, "description": "Enterprise application development." }
+    ],
+    "projects": [
+      { "name": "FreshAI Assistant", "description": "AI-powered customer support automation", "tech": ["Python", "TensorFlow", "React"] }
+    ],
+    "featured": true,
+    "category": "leader"
+  },
+  {
+    "id": "alumni-003",
+    "name": "Rahul Sharma",
+    "email": "rahul.s@srmalumni.org",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Rahul",
+    "coverImage": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=400&fit=crop",
+    "department": "Mechanical Engineering",
+    "batch": 2014,
+    "degree": "B.Tech Mechanical",
+    "currentRole": "Co-Founder & CEO",
+    "company": "GreenDrive Motors",
+    "location": "Pune, India",
+    "country": "India",
+    "skills": ["Product Management", "Machine Learning", "Python"],
+    "experience": 10,
+    "bio": "Serial entrepreneur building India's next-generation electric vehicle ecosystem. SRM Mechanical Engineering alumnus with a vision for sustainable mobility.",
+    "linkedin": "https://linkedin.com/in/rahulsharma",
+    "website": "https://greendrive.in",
+    "achievements": ["Forbes 30 Under 30 India 2022", "Raised $15M Series A", "SRM Startup Founder Award 2023"],
+    "certifications": [],
+    "education": [
+      { "degree": "B.Tech Mechanical Engineering", "institution": "SRM Institute of Science and Technology", "year": 2014 },
+      { "degree": "MBA", "institution": "Indian School of Business", "year": 2018 }
+    ],
+    "experienceHistory": [
+      { "role": "Co-Founder & CEO", "company": "GreenDrive Motors", "startYear": 2019, "description": "Building affordable EV solutions for Indian market." },
+      { "role": "Product Manager", "company": "Mahindra Electric", "startYear": 2016, "endYear": 2019, "description": "Led product development for commercial EV fleet." },
+      { "role": "Design Engineer", "company": "TVS Motor Company", "startYear": 2014, "endYear": 2016, "description": "Automotive design and prototyping." }
+    ],
+    "projects": [
+      { "name": "GreenDrive X1", "description": "Affordable electric scooter with 150km range", "tech": ["Battery Tech", "IoT", "Mobile App"] }
+    ],
+    "featured": true,
+    "hallOfFame": true,
+    "category": "founder"
+  },
+  {
+    "id": "alumni-004",
+    "name": "Dr. Meera Iyer",
+    "email": "meera.i@srmalumni.org",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Meera",
+    "coverImage": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1200&h=400&fit=crop",
+    "department": "Biotechnology",
+    "batch": 2012,
+    "degree": "B.Tech Biotechnology",
+    "currentRole": "Principal Research Scientist",
+    "company": "CSIR-National Institute",
+    "location": "Hyderabad, India",
+    "country": "India",
+    "skills": ["Machine Learning", "Data Analytics", "Python"],
+    "experience": 12,
+    "bio": "Leading research in computational biology and genomics. Published 45+ papers in peer-reviewed journals.",
+    "linkedin": "https://linkedin.com/in/meeraiyer",
+    "achievements": ["Shanti Swarup Bhatnagar Prize Nominee", "45+ Research Publications", "NIH Grant Recipient"],
+    "certifications": [
+      { "name": "Bioinformatics Professional Certificate", "issuer": "Johns Hopkins", "year": 2016 }
+    ],
+    "education": [
+      { "degree": "B.Tech Biotechnology", "institution": "SRM Institute of Science and Technology", "year": 2012 },
+      { "degree": "Ph.D. Computational Biology", "institution": "IISc Bangalore", "year": 2017 }
+    ],
+    "experienceHistory": [
+      { "role": "Principal Research Scientist", "company": "CSIR-National Institute", "startYear": 2020, "description": "Leading genomics research lab with 15 researchers." },
+      { "role": "Postdoctoral Fellow", "company": "MIT Broad Institute", "startYear": 2017, "endYear": 2020, "description": "Cancer genomics research." }
+    ],
+    "projects": [
+      { "name": "GenomeMap India", "description": "Open-source Indian population genomics database", "tech": ["Python", "R", "Cloud Computing"] }
+    ],
+    "hallOfFame": true,
+    "category": "researcher"
+  },
+  {
+    "id": "alumni-005",
+    "name": "Karthik Rajan",
+    "email": "karthik.r@srmalumni.org",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Karthik",
+    "coverImage": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&h=400&fit=crop",
+    "department": "Information Technology",
+    "batch": 2018,
+    "degree": "B.Tech IT",
+    "currentRole": "Software Engineer II",
+    "company": "Amazon",
+    "location": "Seattle, USA",
+    "country": "United States",
+    "skills": ["React", "Node.js", "DevOps", "Cybersecurity"],
+    "experience": 6,
+    "bio": "Full-stack engineer at Amazon AWS. Passionate about open source and mentoring SRM students for global tech careers.",
+    "linkedin": "https://linkedin.com/in/karthikrajan",
+    "github": "https://github.com/karthikrajan",
+    "achievements": ["Amazon Bar Raiser", "Open Source Contributor - 500+ GitHub stars"],
+    "certifications": [
+      { "name": "AWS Developer Associate", "issuer": "Amazon", "year": 2021 }
+    ],
+    "education": [
+      { "degree": "B.Tech Information Technology", "institution": "SRM Institute of Science and Technology", "year": 2018 }
+    ],
+    "experienceHistory": [
+      { "role": "Software Engineer II", "company": "Amazon", "startYear": 2021, "description": "Building AWS Lambda runtime features." },
+      { "role": "Software Engineer", "company": "Flipkart", "startYear": 2018, "endYear": 2021, "description": "E-commerce platform development." }
+    ],
+    "projects": [
+      { "name": "Serverless Toolkit", "description": "Developer tools for AWS Lambda", "tech": ["TypeScript", "AWS CDK"] }
+    ],
+    "featured": true
+  },
+  {
+    "id": "alumni-006",
+    "name": "Ananya Desai",
+    "email": "ananya.d@srmalumni.org",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ananya",
+    "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=400&fit=crop",
+    "department": "Data Science & AI",
+    "batch": 2019,
+    "degree": "B.Tech Data Science",
+    "currentRole": "Data Scientist",
+    "company": "Meta",
+    "location": "London, UK",
+    "country": "United Kingdom",
+    "skills": ["Machine Learning", "Python", "Data Analytics"],
+    "experience": 5,
+    "bio": "ML engineer working on recommendation systems at Meta. SRM Data Science pioneer batch graduate.",
+    "linkedin": "https://linkedin.com/in/ananyadesai",
+    "achievements": ["Meta Hackathon Winner 2023", "Kaggle Grandmaster"],
+    "certifications": [
+      { "name": "TensorFlow Developer Certificate", "issuer": "Google", "year": 2021 }
+    ],
+    "education": [
+      { "degree": "B.Tech Data Science & AI", "institution": "SRM Institute of Science and Technology", "year": 2019 },
+      { "degree": "M.Sc. Machine Learning", "institution": "University of Edinburgh", "year": 2021 }
+    ],
+    "experienceHistory": [
+      { "role": "Data Scientist", "company": "Meta", "startYear": 2022, "description": "Recommendation engine optimization for Instagram." },
+      { "role": "ML Engineer", "company": "Swiggy", "startYear": 2019, "endYear": 2021, "description": "Demand forecasting models." }
+    ],
+    "projects": [
+      { "name": "RecSys Optimizer", "description": "A/B testing framework for recommendation models", "tech": ["Python", "Spark", "PyTorch"] }
+    ],
+    "category": "award-winner"
+  },
+  {
+    "id": "alumni-007",
+    "name": "Vikram Sundaram",
+    "email": "vikram.s@srmalumni.org",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Vikram",
+    "coverImage": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=400&fit=crop",
+    "department": "Civil Engineering",
+    "batch": 2013,
+    "degree": "B.Tech Civil",
+    "currentRole": "Project Director",
+    "company": "L&T Construction",
+    "location": "Mumbai, India",
+    "country": "India",
+    "skills": ["Product Management", "Data Analytics"],
+    "experience": 11,
+    "bio": "Leading mega infrastructure projects across India. Mentor for civil engineering students exploring construction management careers.",
+    "linkedin": "https://linkedin.com/in/vikramsundaram",
+    "achievements": ["L&T Excellence Award 2022", "Managed ₹500Cr+ infrastructure projects"],
+    "certifications": [
+      { "name": "PMP Certification", "issuer": "PMI", "year": 2018 }
+    ],
+    "education": [
+      { "degree": "B.Tech Civil Engineering", "institution": "SRM Institute of Science and Technology", "year": 2013 }
+    ],
+    "experienceHistory": [
+      { "role": "Project Director", "company": "L&T Construction", "startYear": 2020, "description": "Metro rail and smart city projects." },
+      { "role": "Senior Project Manager", "company": "L&T Construction", "startYear": 2015, "endYear": 2020, "description": "Highway and bridge construction." },
+      { "role": "Site Engineer", "company": "Shapoorji Pallonji", "startYear": 2013, "endYear": 2015, "description": "Commercial building projects." }
+    ],
+    "projects": []
+  },
+  {
+    "id": "alumni-008",
+    "name": "Deepa Natarajan",
+    "email": "deepa.n@srmalumni.org",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Deepa",
+    "coverImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=400&fit=crop",
+    "department": "Electrical & Electronics",
+    "batch": 2017,
+    "degree": "B.Tech EEE",
+    "currentRole": "Hardware Design Lead",
+    "company": "Tesla",
+    "location": "Austin, USA",
+    "country": "United States",
+    "skills": ["Machine Learning", "Python", "DevOps"],
+    "experience": 7,
+    "bio": "Designing next-generation power electronics for Tesla vehicles. Active SRM alumni chapter lead in Texas.",
+    "linkedin": "https://linkedin.com/in/deepanatarajan",
+    "achievements": ["Tesla Patent Holder - Battery Management", "IEEE Senior Member"],
+    "certifications": [],
+    "education": [
+      { "degree": "B.Tech Electrical & Electronics", "institution": "SRM Institute of Science and Technology", "year": 2017 },
+      { "degree": "M.S. Power Electronics", "institution": "UT Austin", "year": 2019 }
+    ],
+    "experienceHistory": [
+      { "role": "Hardware Design Lead", "company": "Tesla", "startYear": 2021, "description": "Powertrain electronics design." },
+      { "role": "Hardware Engineer", "company": "Intel", "startYear": 2019, "endYear": 2021, "description": "Chip power delivery design." }
+    ],
+    "projects": [
+      { "name": "PowerOpt BMS", "description": "Optimized battery management system firmware", "tech": ["Embedded C", "MATLAB", "FPGA"] }
+    ],
+    "featured": true
+  }
+]

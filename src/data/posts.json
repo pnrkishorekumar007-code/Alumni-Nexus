@@ -1,0 +1,87 @@
+[
+  {
+    "id": "post-001",
+    "authorId": "alumni-001",
+    "authorName": "Arjun Krishnamurthy",
+    "authorAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun",
+    "authorRole": "Senior Engineering Manager at Google",
+    "content": "Excited to announce that our SRM alumni mentorship program has crossed 1,000 sessions this year! 🎉\n\nIf you're a current SRM student looking for guidance on tech careers, product management, or cloud engineering — my calendar is open. Let's build the next generation of SRM leaders together.\n\n#SRMConnect #AlumniMentorship #GiveBack",
+    "likes": 342,
+    "comments": 48,
+    "shares": 23,
+    "createdAt": "2026-07-18T10:30:00Z",
+    "trending": true
+  },
+  {
+    "id": "post-002",
+    "authorId": "alumni-003",
+    "authorName": "Rahul Sharma",
+    "authorAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Rahul",
+    "authorRole": "Co-Founder & CEO at GreenDrive Motors",
+    "content": "GreenDrive just delivered our 10,000th electric scooter! 🛵⚡\n\nFrom a dorm room idea at SRM to a team of 200 — this journey has been incredible. Grateful to every professor who believed in us and every alumni who opened doors.\n\nWe're hiring 15 engineers. DM me if you're passionate about sustainable mobility.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop",
+    "likes": 891,
+    "comments": 127,
+    "shares": 156,
+    "createdAt": "2026-07-17T14:20:00Z",
+    "trending": true
+  },
+  {
+    "id": "post-003",
+    "authorId": "alumni-002",
+    "authorName": "Priya Venkatesh",
+    "authorAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya",
+    "authorRole": "VP of Engineering at Freshworks",
+    "content": "What's the most valuable skill you learned at SRM that still helps you today?",
+    "poll": {
+      "question": "Most valuable SRM skill?",
+      "options": [
+        { "text": "Technical fundamentals", "votes": 234 },
+        { "text": "Networking & teamwork", "votes": 189 },
+        { "text": "Problem-solving mindset", "votes": 312 },
+        { "text": "Extracurricular leadership", "votes": 98 }
+      ]
+    },
+    "likes": 156,
+    "comments": 89,
+    "shares": 12,
+    "createdAt": "2026-07-16T09:15:00Z",
+    "trending": true
+  },
+  {
+    "id": "post-004",
+    "authorId": "alumni-004",
+    "authorName": "Dr. Meera Iyer",
+    "authorAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Meera",
+    "authorRole": "Principal Research Scientist at CSIR",
+    "content": "Our latest paper on Indian population genomics was published in Nature Genetics! 📄\n\nThis research builds on work I started during my final year project at SRM under Dr. Rajesh Kumar's guidance. Never underestimate the impact of undergraduate research.\n\nLink in comments for interested biotech students.",
+    "likes": 567,
+    "comments": 73,
+    "shares": 89,
+    "createdAt": "2026-07-15T11:45:00Z"
+  },
+  {
+    "id": "post-005",
+    "authorId": "student-001",
+    "authorName": "Adithya Raman",
+    "authorAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Adithya",
+    "authorRole": "3rd Year CSE, SRM",
+    "content": "Just completed my first mentorship session with Arjun Krishnamurthy sir through SRM Connect! 🙏\n\nGot incredible insights on system design interviews and career planning. This platform is a game-changer for students. Already booked my next session.\n\nThank you SRM Alumni Nexus!",
+    "likes": 89,
+    "comments": 15,
+    "shares": 4,
+    "createdAt": "2026-07-19T08:00:00Z"
+  },
+  {
+    "id": "post-006",
+    "authorId": "alumni-005",
+    "authorName": "Karthik Rajan",
+    "authorAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Karthik",
+    "authorRole": "Software Engineer II at Amazon",
+    "content": "Hosting an AMA (Ask Me Anything) for SRM students this Friday at 7 PM IST!\n\nTopics: Working abroad, Amazon interview prep, open source contributions, and life as an NRI alumni.\n\nRegister through the Events section. See you there! 👋",
+    "likes": 234,
+    "comments": 56,
+    "shares": 34,
+    "createdAt": "2026-07-14T16:30:00Z"
+  }
+]

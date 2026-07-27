@@ -1,0 +1,74 @@
+[
+  {
+    "id": "company-001",
+    "name": "Google",
+    "logo": "https://api.dicebear.com/7.x/initials/svg?seed=Google",
+    "industry": "Technology",
+    "location": "Bangalore, India",
+    "alumniCount": 342,
+    "openPositions": 12
+  },
+  {
+    "id": "company-002",
+    "name": "Amazon",
+    "logo": "https://api.dicebear.com/7.x/initials/svg?seed=Amazon",
+    "industry": "E-commerce & Cloud",
+    "location": "Bangalore, India",
+    "alumniCount": 289,
+    "openPositions": 18
+  },
+  {
+    "id": "company-003",
+    "name": "Freshworks",
+    "logo": "https://api.dicebear.com/7.x/initials/svg?seed=Freshworks",
+    "industry": "SaaS",
+    "location": "Chennai, India",
+    "alumniCount": 456,
+    "openPositions": 24
+  },
+  {
+    "id": "company-004",
+    "name": "Microsoft",
+    "logo": "https://api.dicebear.com/7.x/initials/svg?seed=Microsoft",
+    "industry": "Technology",
+    "location": "Hyderabad, India",
+    "alumniCount": 234,
+    "openPositions": 15
+  },
+  {
+    "id": "company-005",
+    "name": "Meta",
+    "logo": "https://api.dicebear.com/7.x/initials/svg?seed=Meta",
+    "industry": "Social Media",
+    "location": "London, UK",
+    "alumniCount": 87,
+    "openPositions": 8
+  },
+  {
+    "id": "company-006",
+    "name": "Tesla",
+    "logo": "https://api.dicebear.com/7.x/initials/svg?seed=Tesla",
+    "industry": "Automotive",
+    "location": "Austin, USA",
+    "alumniCount": 45,
+    "openPositions": 6
+  },
+  {
+    "id": "company-007",
+    "name": "GreenDrive Motors",
+    "logo": "https://api.dicebear.com/7.x/initials/svg?seed=GreenDrive",
+    "industry": "Electric Vehicles",
+    "location": "Pune, India",
+    "alumniCount": 78,
+    "openPositions": 15
+  },
+  {
+    "id": "company-008",
+    "name": "Flipkart",
+    "logo": "https://api.dicebear.com/7.x/initials/svg?seed=Flipkart",
+    "industry": "E-commerce",
+    "location": "Bangalore, India",
+    "alumniCount": 312,
+    "openPositions": 20
+  }
+]

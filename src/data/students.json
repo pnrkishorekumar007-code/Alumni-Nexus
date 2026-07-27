@@ -1,0 +1,52 @@
+[
+  {
+    "id": "student-001",
+    "name": "Adithya Raman",
+    "email": "adithya.ram@srmuniv.ac.in",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Adithya",
+    "department": "Computer Science & Engineering",
+    "batch": 2026,
+    "year": 3,
+    "rollNumber": "RA2211026010001"
+  },
+  {
+    "id": "student-002",
+    "name": "Sneha Patel",
+    "email": "sneha.patel@srmuniv.ac.in",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sneha",
+    "department": "Electronics & Communication",
+    "batch": 2026,
+    "year": 3,
+    "rollNumber": "RA2211026010042"
+  },
+  {
+    "id": "student-003",
+    "name": "Mohammed Faizal",
+    "email": "faizal.m@srmuniv.ac.in",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Faizal",
+    "department": "Mechanical Engineering",
+    "batch": 2027,
+    "year": 2,
+    "rollNumber": "RA2211027010088"
+  },
+  {
+    "id": "student-004",
+    "name": "Lakshmi Priya",
+    "email": "lakshmi.p@srmuniv.ac.in",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Lakshmi",
+    "department": "Data Science & AI",
+    "batch": 2026,
+    "year": 3,
+    "rollNumber": "RA2211026010156"
+  },
+  {
+    "id": "student-005",
+    "name": "Rohan Gupta",
+    "email": "rohan.g@srmuniv.ac.in",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Rohan",
+    "department": "Information Technology",
+    "batch": 2027,
+    "year": 2,
+    "rollNumber": "RA2211027010203"
+  }
+]

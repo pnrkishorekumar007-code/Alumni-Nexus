@@ -1,0 +1,47 @@
+[
+  {
+    "id": "news-001",
+    "title": "SRM Alumni Raises $15M for GreenDrive EV Startup",
+    "excerpt": "Rahul Sharma (Batch 2014, Mechanical) secures Series A funding to expand electric vehicle manufacturing across South India.",
+    "image": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800&h=400&fit=crop",
+    "category": "Startup",
+    "date": "2026-07-15",
+    "author": "Alumni Relations Office"
+  },
+  {
+    "id": "news-002",
+    "title": "SRM Ranked #1 Private University for Placements 2026",
+    "excerpt": "With 95% placement rate and average package of ₹12 LPA, SRM continues to lead among private engineering institutions in India.",
+    "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=400&fit=crop",
+    "category": "Achievement",
+    "date": "2026-07-10",
+    "author": "Placement Cell"
+  },
+  {
+    "id": "news-003",
+    "title": "Dr. Meera Iyer Published in Nature Genetics",
+    "excerpt": "SRM Biotechnology alumna's groundbreaking research on Indian population genomics featured in prestigious journal.",
+    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=400&fit=crop",
+    "category": "Research",
+    "date": "2026-07-08",
+    "author": "Research Department"
+  },
+  {
+    "id": "news-004",
+    "title": "Global Alumni Reunion 2026 Registration Opens",
+    "excerpt": "Over 1,800 alumni have already registered for the biggest SRM reunion event happening this August at main campus.",
+    "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=400&fit=crop",
+    "category": "Events",
+    "date": "2026-07-05",
+    "author": "Alumni Association"
+  },
+  {
+    "id": "news-005",
+    "title": "New Mentorship Program Crosses 1,000 Sessions",
+    "excerpt": "SRM Connect mentorship platform achieves milestone with alumni from Google, Amazon, Meta, and 200+ companies participating.",
+    "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=400&fit=crop",
+    "category": "Platform",
+    "date": "2026-07-01",
+    "author": "SRM Connect Team"
+  }
+]

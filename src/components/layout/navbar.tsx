@@ -51,7 +51,7 @@ export function Navbar({ variant = "public", userName, userAvatar }: NavbarProps
                   "px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200",
                   pathname === link.href
                     ? "text-accent border-b-2 border-accent"
-                    : "text-white/80 hover:text-accent hover:bg-white/5"
+                    : "text-white/80 hover:text-accent hover:bg-white/8"
                 )}
               >
                 {link.label}

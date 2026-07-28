@@ -6,14 +6,13 @@ import {
   MapPin,
   Building2,
   Mail,
-  Linkedin,
-  Github,
   Globe,
   Award,
   BookOpen,
   FolderGit2,
   ExternalLink,
 } from "lucide-react";
+import { LinkedinIcon, GithubIcon } from "@/components/shared/brand-icons";
 import { PublicLayout } from "@/components/layout/public-layout";
 import { PageHeader } from "@/components/shared/page-header";
 import { Timeline } from "@/components/shared/timeline";
@@ -195,12 +194,12 @@ export default function AlumniProfilePage({ params }: { params: Promise<{ id: st
                 </div>
                 {alumni.linkedin && (
                   <Link href={alumni.linkedin} target="_blank" className="flex items-center gap-2 text-sm text-primary hover:underline">
-                    <Linkedin className="h-4 w-4" /> LinkedIn <ExternalLink className="h-3 w-3" />
+                    <LinkedinIcon className="h-4 w-4" /> LinkedIn <ExternalLink className="h-3 w-3" />
                   </Link>
                 )}
                 {alumni.github && (
                   <Link href={alumni.github} target="_blank" className="flex items-center gap-2 text-sm text-primary hover:underline">
-                    <Github className="h-4 w-4" /> GitHub <ExternalLink className="h-3 w-3" />
+                    <GithubIcon className="h-4 w-4" /> GitHub <ExternalLink className="h-3 w-3" />
                   </Link>
                 )}
                 {alumni.website && (

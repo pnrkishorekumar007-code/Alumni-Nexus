@@ -1,0 +1,87 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  SUPER_ADMIN
+  ADMIN
+  ALUMNI
+  STUDENT
+  FACULTY
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  SUSPENDED
+  BANNED
+}
+
+model Role {
+  role_id   String @id @default(uuid()) @db.Uuid
+  role_name UserRole @unique
+
+  users User[]
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("roles")
+}
+
+model Department {
+  department_id   String @id @default(uuid()) @db.Uuid
+  department_name String @unique @db.VarChar(255)
+
+  users User[]
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("departments")
+}
+
+model User {
+  user_id       String  @id @default(uuid()) @db.Uuid
+  name          String  @db.VarChar(255)
+  email         String  @unique @db.VarChar(255)
+  password      String? @db.VarChar(255)
+  phone         String? @db.VarChar(20)
+  profile_photo String? @db.VarChar(500)
+  is_verified   Boolean @default(false)
+  status        UserStatus @default(ACTIVE)
+
+  role_id       String  @db.Uuid
+  department_id String? @db.Uuid
+
+  role       Role       @relation(fields: [role_id], references: [role_id], onDelete: Restrict)
+  department Department? @relation(fields: [department_id], references: [department_id], onDelete: SetNull)
+
+  refresh_tokens RefreshToken[]
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@index([email])
+  @@index([role_id])
+  @@index([department_id])
+  @@map("users")
+}
+
+model RefreshToken {
+  id         String   @id @default(uuid()) @db.Uuid
+  token      String   @unique @db.Text
+  user_id    String   @db.Uuid
+  expires_at DateTime
+  created_at DateTime @default(now())
+
+  user User @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+
+  @@index([user_id])
+  @@map("refresh_tokens")
+}

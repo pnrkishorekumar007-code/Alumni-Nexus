@@ -51,7 +51,7 @@ export default function StudentDashboardPage() {
           <CardContent>
             <Chart
               data={mentorshipStats}
-              dataKeys={[{ key: "sessions", color: "#0a2472", name: "Sessions" }]}
+              dataKeys={[{ key: "sessions", color: "#3b82f6", name: "Sessions" }]}
               type="area"
             />
           </CardContent>

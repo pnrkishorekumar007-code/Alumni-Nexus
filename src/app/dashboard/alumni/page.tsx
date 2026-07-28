@@ -65,7 +65,7 @@ export default function AlumniDashboardPage() {
           <CardContent>
             <Chart
               data={mentorshipStats}
-              dataKeys={[{ key: "sessions", color: "#d4af37", name: "Sessions Completed" }]}
+              dataKeys={[{ key: "sessions", color: "#f59e0b", name: "Sessions Completed" }]}
               type="bar"
             />
           </CardContent>

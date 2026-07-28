@@ -65,7 +65,7 @@ export default function LoginPage() {
           animate={{ opacity: 1, y: 0 }}
           className="w-full max-w-md"
         >
-          <Card className="glass-card shadow-xl border-0">
+          <Card className="glass-card shadow-xl border border-border/60">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl">Sign In</CardTitle>
               <CardDescription>Enter your credentials to access your account</CardDescription>

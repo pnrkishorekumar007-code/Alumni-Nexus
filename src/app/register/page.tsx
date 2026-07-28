@@ -62,7 +62,7 @@ export default function RegisterPage() {
       <div className="flex-1 flex items-center justify-center p-6 relative overflow-y-auto">
         <div className="absolute top-4 right-4"><ThemeToggle /></div>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-lg py-6">
-          <Card className="glass-card shadow-xl border-0">
+          <Card className="glass-card shadow-xl border border-border/60">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl">Create Account</CardTitle>
               <CardDescription>Join the SRM Alumni Nexus community</CardDescription>

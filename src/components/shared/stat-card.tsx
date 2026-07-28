@@ -30,11 +30,11 @@ export function StatCard({ label, value, change, trend, icon: Icon, className, d
               <p className="mt-1.5 text-2xl font-bold tracking-tight">{value}</p>
               {change && (
                 <div className="mt-1.5 flex items-center gap-1 text-xs">
-                  {trend === "up" && <TrendingUp className="h-3 w-3 text-emerald-500" />}
-                  {trend === "down" && <TrendingDown className="h-3 w-3 text-red-500" />}
+                  {trend === "up" && <TrendingUp className="h-3.5 w-3.5 text-emerald-500" />}
+                  {trend === "down" && <TrendingDown className="h-3.5 w-3.5 text-rose-500" />}
                   <span className={cn(
-                    trend === "up" && "text-emerald-600",
-                    trend === "down" && "text-red-600",
+                    trend === "up" && "text-emerald-600 dark:text-emerald-400 font-medium",
+                    trend === "down" && "text-rose-600 dark:text-rose-400 font-medium",
                     trend === "neutral" && "text-muted-foreground"
                   )}>
                     {change}

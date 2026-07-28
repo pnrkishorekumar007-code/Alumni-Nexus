@@ -131,7 +131,7 @@ export default function JobsPage() {
                 <div className="flex gap-3 pt-4">
                   <Button onClick={handleApply} className="flex-1">Apply Now</Button>
                   <Button variant="outline" onClick={() => {
-                    setSavedJobs((prev) => [...prev, selectedJob.id]);
+                    setSavedJobs((prev) => prev.includes(selectedJob.id) ? prev : [...prev, selectedJob.id]);
                     toast.success("Job saved!");
                   }}>Save Job</Button>
                 </div>

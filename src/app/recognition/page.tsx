@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Trophy, Rocket, Microscope, Medal } from "lucide-react";
 import { PublicLayout } from "@/components/layout/public-layout";
 import { PageHeader } from "@/components/shared/page-header";
@@ -57,12 +57,12 @@ function AchievementCard({ alumni }: { alumni: Alumni }) {
 
 export default function RecognitionPage() {
   const [activeCategory, setActiveCategory] = useState("all");
-  const hallOfFame = getHallOfFame();
-  const allAlumni = getAlumni().filter((a) => a.hallOfFame || a.featured);
+  const hallOfFame = useMemo(() => getHallOfFame(), []);
+  const allAlumni = useMemo(() => getAlumni().filter((a) => a.hallOfFame || a.featured), []);
 
-  const filtered = activeCategory === "all"
+  const filtered = useMemo(() => activeCategory === "all"
     ? hallOfFame.length > 0 ? hallOfFame : allAlumni
-    : allAlumni.filter((a) => a.category === activeCategory);
+    : allAlumni.filter((a) => a.category === activeCategory), [activeCategory, hallOfFame, allAlumni]);
 
   return (
     <PublicLayout>

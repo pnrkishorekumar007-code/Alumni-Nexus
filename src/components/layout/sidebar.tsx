@@ -44,7 +44,7 @@ interface SidebarLink {
 }
 
 interface SidebarProps {
-  links: SidebarLink[];
+  links: readonly SidebarLink[];
   collapsed?: boolean;
 }
 
@@ -104,6 +104,7 @@ export function Sidebar({ links }: SidebarProps) {
         variant="outline"
         size="icon"
         className="fixed bottom-4 left-4 z-40 lg:hidden shadow-lg"
+        aria-label="Open menu"
         onClick={() => setMobileOpen(true)}
       >
         <Menu className="h-4 w-4" />

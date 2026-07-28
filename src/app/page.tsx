@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import Link from "next/link";
 import {
@@ -43,9 +43,9 @@ function AnimatedCounter({ value, suffix = "" }: { value: number; suffix?: strin
 }
 
 export default function LandingPage() {
-  const featuredAlumni = getFeaturedAlumni().slice(0, 4);
-  const upcomingEvents = getUpcomingEvents().slice(0, 3);
-  const news = getNews().slice(0, 4);
+  const featuredAlumni = useMemo(() => getFeaturedAlumni().slice(0, 4), []);
+  const upcomingEvents = useMemo(() => getUpcomingEvents().slice(0, 3), []);
+  const news = useMemo(() => getNews().slice(0, 4), []);
 
   return (
     <>

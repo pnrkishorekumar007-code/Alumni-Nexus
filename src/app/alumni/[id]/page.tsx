@@ -2,6 +2,7 @@
 
 import { use } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   MapPin,
   Building2,
@@ -28,6 +29,7 @@ import Image from "next/image";
 
 export default function AlumniProfilePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
+  const router = useRouter();
   const alumni = getAlumniById(id);
 
   if (!alumni) {
@@ -39,7 +41,7 @@ export default function AlumniProfilePage({ params }: { params: Promise<{ id: st
             title="Alumni not found"
             description="The profile you're looking for doesn't exist."
             actionLabel="Browse Directory"
-            onAction={() => window.location.href = "/alumni"}
+            onAction={() => router.push("/alumni")}
           />
         </div>
       </PublicLayout>

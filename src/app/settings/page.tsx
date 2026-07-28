@@ -28,7 +28,7 @@ const profileSchema = z.object({
 type ProfileForm = z.infer<typeof profileSchema>;
 
 export default function SettingsPage() {
-  const { register, handleSubmit, formState: { isSubmitting } } = useForm<ProfileForm>({
+  const { register, handleSubmit, setValue, formState: { isSubmitting } } = useForm<ProfileForm>({
     resolver: zodResolver(profileSchema),
     defaultValues: {
       name: "Adithya Raman",
@@ -82,7 +82,7 @@ export default function SettingsPage() {
                 </div>
                 <div className="space-y-2">
                   <Label>Department</Label>
-                  <Select defaultValue="Computer Science & Engineering">
+                  <Select defaultValue="Computer Science & Engineering" onValueChange={(v) => setValue("department", v)}>
                     <SelectTrigger><SelectValue /></SelectTrigger>
                     <SelectContent>
                       {DEPARTMENTS.map((d) => (

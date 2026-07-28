@@ -38,7 +38,7 @@ export default function RegisterPage() {
 
   const onSubmit = () => {
     toast.success("Account created! Please verify your email.");
-    setTimeout(() => router.push("/login"), 1500);
+    router.push("/login");
   };
 
   return (

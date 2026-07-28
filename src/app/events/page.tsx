@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { QrCode, Calendar } from "lucide-react";
 import { PublicLayout } from "@/components/layout/public-layout";
 import { PageHeader } from "@/components/shared/page-header";
@@ -23,8 +23,8 @@ export default function EventsPage() {
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
   const [activeType, setActiveType] = useState<string>("all");
 
-  const upcoming = getUpcomingEvents();
-  const past = getPastEvents();
+  const upcoming = useMemo(() => getUpcomingEvents(), []);
+  const past = useMemo(() => getPastEvents(), []);
 
   const filterByType = (events: Event[]) =>
     activeType === "all" ? events : events.filter((e) => e.type === activeType);
@@ -110,7 +110,7 @@ export default function EventsPage() {
                     <span>Registration</span>
                     <span>{selectedEvent.attendees}/{selectedEvent.maxAttendees}</span>
                   </div>
-                  <Progress value={(selectedEvent.attendees / selectedEvent.maxAttendees) * 100} className="h-2" />
+                  <Progress value={selectedEvent.maxAttendees > 0 ? (selectedEvent.attendees / selectedEvent.maxAttendees) * 100 : 0} className="h-2" />
                 </div>
                 {!selectedEvent.past && (
                   <div className="flex flex-col items-center p-6 rounded-xl border bg-muted/30">

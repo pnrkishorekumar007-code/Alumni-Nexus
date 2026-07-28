@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ShieldCheck } from "lucide-react";
@@ -11,7 +10,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 
 export default function VerifyOtpPage() {
-  const router = useRouter();
   const [otp, setOtp] = useState(["", "", "", "", "", ""]);
   const inputs = useRef<(HTMLInputElement | null)[]>([]);
 
@@ -35,7 +33,7 @@ export default function VerifyOtpPage() {
       return;
     }
     toast.success("Email verified! You can now reset your password.");
-    setTimeout(() => router.push("/login"), 1500);
+    window.location.href = "/login";
   };
 
   const handleResend = () => {

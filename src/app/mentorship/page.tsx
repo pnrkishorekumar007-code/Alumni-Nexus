@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Calendar, Clock, Star, MessageSquare } from "lucide-react";
 import { PublicLayout } from "@/components/layout/public-layout";
 import { PageHeader } from "@/components/shared/page-header";
@@ -16,7 +16,27 @@ import type { Mentor } from "@/types";
 import { toast } from "sonner";
 
 const timeSlots = ["9:00 AM", "10:00 AM", "11:00 AM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM"];
-const days = ["Mon 21", "Tue 22", "Wed 23", "Thu 24", "Fri 25"];
+
+function getNextWeekdays(): string[] {
+  const days: string[] = [];
+  const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const now = new Date();
+  let added = 0;
+  let offset = 1;
+  while (added < 5) {
+    const d = new Date(now);
+    d.setDate(now.getDate() + offset);
+    const dayOfWeek = d.getDay();
+    if (dayOfWeek >= 1 && dayOfWeek <= 5) {
+      days.push(`${dayNames[dayOfWeek]} ${d.getDate()}`);
+      added++;
+    }
+    offset++;
+  }
+  return days;
+}
+
+const days = getNextWeekdays();
 
 const sessionHistory = [
   { mentor: "Arjun Krishnamurthy", date: "Jul 15, 2026", topic: "Career in Cloud Engineering", rating: 5 },
@@ -30,12 +50,12 @@ export default function MentorshipPage() {
   const [selectedDay, setSelectedDay] = useState(days[0]);
   const [selectedSlot, setSelectedSlot] = useState<string | null>(null);
 
-  const mentors = getMentors().filter(
+  const mentors = useMemo(() => getMentors().filter(
     (m) =>
       !search ||
       m.name.toLowerCase().includes(search.toLowerCase()) ||
       m.expertise.some((e) => e.toLowerCase().includes(search.toLowerCase()))
-  );
+  ), [search]);
 
   const handleBook = () => {
     toast.success(`Session booked with ${selectedMentor?.name} on ${selectedDay} at ${selectedSlot}`);
@@ -77,7 +97,7 @@ export default function MentorshipPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 {sessionHistory.map((session) => (
-                  <div key={session.date} className="flex items-center justify-between p-4 rounded-lg border hover:bg-muted/50 transition-colors">
+                  <div key={`${session.mentor}-${session.date}`} className="flex items-center justify-between p-4 rounded-lg border hover:bg-muted/50 transition-colors">
                     <div>
                       <p className="font-medium">{session.mentor}</p>
                       <p className="text-sm text-muted-foreground">{session.topic}</p>

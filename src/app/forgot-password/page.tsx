@@ -28,7 +28,7 @@ export default function ForgotPasswordPage() {
 
   const onSubmit = () => {
     toast.success("OTP sent to your email address");
-    setTimeout(() => router.push("/verify-otp"), 1000);
+    router.push("/verify-otp");
   };
 
   return (

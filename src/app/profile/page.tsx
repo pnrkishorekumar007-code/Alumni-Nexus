@@ -28,7 +28,15 @@ import Image from "next/image";
 const profileAlumni = getAlumniById("alumni-001");
 
 export default function ProfilePage() {
-  const alumni = profileAlumni!;
+  const alumni = profileAlumni;
+
+  if (!alumni) {
+    return (
+      <DashboardLayout role="alumni" userName="User" userAvatar="">
+        <p className="text-muted-foreground p-8">Profile not found.</p>
+      </DashboardLayout>
+    );
+  }
 
   return (
     <DashboardLayout role="alumni" userName={alumni.name} userAvatar={alumni.avatar}>

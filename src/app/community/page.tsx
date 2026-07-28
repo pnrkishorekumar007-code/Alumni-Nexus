@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Image as ImageIcon, BarChart3, TrendingUp, Send } from "lucide-react";
 import { PublicLayout } from "@/components/layout/public-layout";
 import { PageHeader } from "@/components/shared/page-header";
@@ -15,8 +15,8 @@ import { toast } from "sonner";
 export default function CommunityPage() {
   const [postContent, setPostContent] = useState("");
   const [showPoll, setShowPoll] = useState(false);
-  const posts = getPosts();
-  const trending = getTrendingPosts();
+  const posts = useMemo(() => getPosts(), []);
+  const trending = useMemo(() => getTrendingPosts(), []);
 
   const handlePost = () => {
     if (!postContent.trim()) return;
@@ -53,11 +53,10 @@ export default function CommunityPage() {
                     <input
                       placeholder="Poll question..."
                       className="w-full rounded-md border bg-background px-3 py-2 text-sm"
-                      defaultValue="What's the most valuable skill for tech careers in 2026?"
                     />
-                    <input placeholder="Option 1" className="w-full rounded-md border bg-background px-3 py-2 text-sm" defaultValue="AI/ML" />
-                    <input placeholder="Option 2" className="w-full rounded-md border bg-background px-3 py-2 text-sm" defaultValue="Cloud Architecture" />
-                    <input placeholder="Option 3" className="w-full rounded-md border bg-background px-3 py-2 text-sm" defaultValue="Product Management" />
+                    <input placeholder="Option 1" className="w-full rounded-md border bg-background px-3 py-2 text-sm" />
+                    <input placeholder="Option 2" className="w-full rounded-md border bg-background px-3 py-2 text-sm" />
+                    <input placeholder="Option 3" className="w-full rounded-md border bg-background px-3 py-2 text-sm" />
                   </div>
                 )}
                 <div className="flex items-center justify-between mt-3">

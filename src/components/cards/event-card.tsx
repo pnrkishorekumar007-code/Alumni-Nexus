@@ -57,7 +57,7 @@ export function EventCard({ event, index = 0 }: EventCardProps) {
               <span>{event.attendees}/{event.maxAttendees} registered</span>
             </div>
           </div>
-          <Link href="/events">
+          <Link href={`/events?highlight=${event.id}`}>
             <Button className="w-full mt-4" size="sm" variant={event.past ? "outline" : "default"}>
               {event.past ? "View Recap" : "Register Now"}
             </Button>

@@ -30,7 +30,7 @@ export default function LoginPage() {
 
   const onSubmit = () => {
     toast.success("Welcome back! Redirecting to dashboard...");
-    setTimeout(() => router.push("/dashboard/student"), 1000);
+    router.push("/dashboard/student");
   };
 
   return (

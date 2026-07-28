@@ -31,7 +31,7 @@ export function ActivityList({ activities, title = "Recent Activity" }: Activity
       <CardHeader>
         <CardTitle className="text-lg">{title}</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-3">
         {activities.map((activity) => {
           const Icon = iconMap[activity.icon] ?? TrendingUp;
           return (

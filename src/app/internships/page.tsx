@@ -31,7 +31,7 @@ export default function InternshipsPage() {
 
   return (
     <PublicLayout>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
         <PageHeader
           title="Internships"
           description="Summer and semester internships from SRM alumni network companies"
@@ -43,13 +43,13 @@ export default function InternshipsPage() {
           onChange={setSearch}
           placeholder="Search internships..."
           showFilter={false}
-          className="mb-8"
+          className="mb-6"
         />
 
         {filtered.length === 0 ? (
           <EmptyState icon={GraduationCap} title="No internships found" description="Check back soon for new opportunities." />
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {filtered.map((job, i) => (
               <JobCard key={job.id} job={job} index={i} onView={setSelectedJob} />
             ))}

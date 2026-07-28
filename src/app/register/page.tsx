@@ -45,7 +45,7 @@ export default function RegisterPage() {
     <div className="min-h-screen flex">
       <div className="hidden lg:flex lg:w-2/5 gradient-hero items-center justify-center p-12 relative overflow-hidden">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-white max-w-sm">
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center gap-3 mb-6">
             <GraduationCap className="h-10 w-10" />
             <div>
               <h1 className="text-xl font-bold">{BRAND.name}</h1>
@@ -61,7 +61,7 @@ export default function RegisterPage() {
 
       <div className="flex-1 flex items-center justify-center p-6 relative overflow-y-auto">
         <div className="absolute top-4 right-4"><ThemeToggle /></div>
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-lg py-8">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-lg py-6">
           <Card className="glass-card shadow-xl border-0">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl">Create Account</CardTitle>

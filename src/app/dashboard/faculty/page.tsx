@@ -24,7 +24,7 @@ export default function FacultyDashboardPage() {
         breadcrumbs={[{ label: "Faculty Dashboard" }]}
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-6">
         <StatCard label="Students" value="1,240" change="Batch 2023-27" trend="neutral" icon={GraduationCap} delay={0} />
         <StatCard label="Alumni" value="8,500" change="+120 this year" trend="up" icon={Users} delay={0.1} />
         <StatCard label="Mentorship Requests" value={18} change="5 pending" trend="neutral" icon={HeartHandshake} delay={0.2} />
@@ -32,7 +32,7 @@ export default function FacultyDashboardPage() {
         <StatCard label="Placement Rate" value="96%" change="+2% YoY" trend="up" icon={BarChart3} delay={0.4} />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-6">
         <Card className="glass-card">
           <CardHeader>
             <CardTitle>Department Statistics</CardTitle>

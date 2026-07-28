@@ -54,7 +54,7 @@ export default function LandingPage() {
         {/* Hero */}
         <section className="gradient-hero relative overflow-hidden text-white">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
-          <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
+          <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -85,7 +85,7 @@ export default function LandingPage() {
               </div>
             </motion.div>
 
-            <div className="mt-16 grid grid-cols-2 gap-4 lg:grid-cols-4">
+            <div className="mt-10 grid grid-cols-2 gap-3 lg:grid-cols-4">
               {STATS.map((stat, i) => {
                 const Icon = statIcons[i];
                 return (
@@ -112,11 +112,11 @@ export default function LandingPage() {
         </section>
 
         {/* Featured Alumni */}
-        <section className="py-20 bg-background">
+        <section className="py-14 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex items-end justify-between mb-10">
+            <div className="flex items-end justify-between mb-6">
               <div>
-                <h2 className="text-3xl font-bold">Featured Alumni</h2>
+                <h2 className="text-2xl font-bold">Featured Alumni</h2>
                 <p className="mt-2 text-muted-foreground">Leaders making impact across the globe</p>
               </div>
               <Link href="/alumni">
@@ -125,7 +125,7 @@ export default function LandingPage() {
                 </Button>
               </Link>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {featuredAlumni.map((alumni, i) => (
                 <AlumniCard key={alumni.id} alumni={alumni} index={i} />
               ))}
@@ -134,16 +134,16 @@ export default function LandingPage() {
         </section>
 
         {/* Upcoming Events */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-14 bg-muted/30">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-3 mb-10">
-              <Calendar className="h-7 w-7 text-primary" />
+            <div className="flex items-center gap-3 mb-6">
+              <Calendar className="h-6 w-6 text-primary" />
               <div>
-                <h2 className="text-3xl font-bold">Upcoming Events</h2>
+                <h2 className="text-2xl font-bold">Upcoming Events</h2>
                 <p className="mt-1 text-muted-foreground">Reunions, workshops, and networking sessions</p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {upcomingEvents.map((event, i) => (
                 <EventCard key={event.id} event={event} index={i} />
               ))}
@@ -152,16 +152,16 @@ export default function LandingPage() {
         </section>
 
         {/* Latest News */}
-        <section className="py-20 bg-background">
+        <section className="py-14 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-3 mb-10">
-              <Newspaper className="h-7 w-7 text-primary" />
+            <div className="flex items-center gap-3 mb-6">
+              <Newspaper className="h-6 w-6 text-primary" />
               <div>
-                <h2 className="text-3xl font-bold">Latest News</h2>
+                <h2 className="text-2xl font-bold">Latest News</h2>
                 <p className="mt-1 text-muted-foreground">Updates from the SRM community</p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {news.map((item, i) => (
                 <motion.div
                   key={item.id}
@@ -187,16 +187,16 @@ export default function LandingPage() {
         </section>
 
         {/* Success Stories */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-14 bg-muted/30">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-3 mb-10">
-              <Trophy className="h-7 w-7 text-accent" />
+            <div className="flex items-center gap-3 mb-6">
+              <Trophy className="h-6 w-6 text-accent" />
               <div>
-                <h2 className="text-3xl font-bold">Success Stories</h2>
+                <h2 className="text-2xl font-bold">Success Stories</h2>
                 <p className="mt-1 text-muted-foreground">Inspiring journeys from our alumni community</p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {[
                 { name: "Rahul Sharma", story: "From SRM dorm room to raising $15M for GreenDrive EV startup", batch: "2014", dept: "Mechanical" },
                 { name: "Dr. Meera Iyer", story: "Published groundbreaking genomics research in Nature Genetics", batch: "2012", dept: "Biotechnology" },
@@ -224,13 +224,13 @@ export default function LandingPage() {
         </section>
 
         {/* CTA */}
-        <section className="gradient-hero py-20 text-white">
+        <section className="gradient-hero py-14 text-white">
           <div className="mx-auto max-w-3xl px-4 text-center">
-            <h2 className="text-3xl font-bold">Ready to Connect?</h2>
-            <p className="mt-4 text-blue-100 text-lg">
+            <h2 className="text-2xl font-bold">Ready to Connect?</h2>
+            <p className="mt-3 text-blue-100 text-lg">
               Join thousands of SRM alumni, students, and faculty building meaningful connections every day.
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <div className="mt-6 flex flex-wrap justify-center gap-4">
               <Link href="/register">
                 <Button size="lg" variant="gold" className="gap-2">
                   Create Account <ArrowRight className="h-4 w-4" />

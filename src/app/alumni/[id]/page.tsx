@@ -50,7 +50,7 @@ export default function AlumniProfilePage({ params }: { params: Promise<{ id: st
 
   return (
     <PublicLayout>
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-8">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-6">
         <PageHeader
           title={alumni.name}
           breadcrumbs={[
@@ -59,7 +59,7 @@ export default function AlumniProfilePage({ params }: { params: Promise<{ id: st
           ]}
         />
 
-        <Card className="glass-card overflow-hidden mb-8">
+        <Card className="glass-card overflow-hidden mb-6">
           <div className="h-40 sm:h-52 bg-gradient-to-r from-primary/30 to-primary/10 relative">
             <Image src={alumni.coverImage} alt={`${alumni.name} cover photo`} fill className="object-cover opacity-60" unoptimized />
           </div>
@@ -90,7 +90,7 @@ export default function AlumniProfilePage({ params }: { params: Promise<{ id: st
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           <div className="lg:col-span-2">
             <Tabs defaultValue="about">
               <TabsList className="w-full justify-start">
@@ -186,7 +186,7 @@ export default function AlumniProfilePage({ params }: { params: Promise<{ id: st
             </Tabs>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-5">
             <Card className="glass-card">
               <CardHeader>
                 <CardTitle className="text-base">Contact & Social</CardTitle>

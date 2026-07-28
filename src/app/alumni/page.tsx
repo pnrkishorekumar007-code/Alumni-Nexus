@@ -47,7 +47,7 @@ export default function AlumniDirectoryPage() {
 
   return (
     <PublicLayout>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
         <PageHeader
           title="Alumni Directory"
           description={`Discover ${alumni.length}+ SRM alumni making impact worldwide`}
@@ -64,7 +64,7 @@ export default function AlumniDirectoryPage() {
           }
         />
 
-        <div className="mb-6">
+        <div className="mb-4">
           <SearchBar
             value={search}
             onChange={setSearch}
@@ -78,7 +78,7 @@ export default function AlumniDirectoryPage() {
           values={filters}
           onChange={(key, value) => setFilters((prev) => ({ ...prev, [key]: value }))}
           onClear={() => setFilters({})}
-          className="mb-8"
+          className="mb-6"
         />
 
         {filtered.length === 0 ? (
@@ -90,13 +90,13 @@ export default function AlumniDirectoryPage() {
             onAction={() => { setSearch(""); setFilters({}); }}
           />
         ) : view === "grid" ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {filtered.map((a, i) => (
               <AlumniCard key={a.id} alumni={a} index={i} />
             ))}
           </div>
         ) : (
-          <div className="space-y-3">
+          <div className="space-y-2">
             {filtered.map((a) => (
               <Link key={a.id} href={`/alumni/${a.id}`}>
                 <Card className="glass-card hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">

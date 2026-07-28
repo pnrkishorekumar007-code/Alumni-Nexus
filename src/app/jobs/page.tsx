@@ -52,7 +52,7 @@ export default function JobsPage() {
 
   return (
     <PublicLayout>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
         <PageHeader
           title="Career Hub — Jobs"
           description="Discover full-time roles and alumni referrals from top companies"
@@ -65,19 +65,19 @@ export default function JobsPage() {
             <TabsTrigger value="saved">Saved ({savedJobs.length})</TabsTrigger>
             <TabsTrigger value="applied">Applications (3)</TabsTrigger>
           </TabsList>
-          <TabsContent value="all" className="mt-6">
+          <TabsContent value="all" className="mt-4">
             <SearchBar value={search} onChange={setSearch} placeholder="Search jobs, companies..." showFilter={false} className="mb-4" />
             <AdvancedFilters
               filters={filterOptions}
               values={filters}
               onChange={(key, value) => setFilters((prev) => ({ ...prev, [key]: value }))}
               onClear={() => setFilters({})}
-              className="mb-8"
+              className="mb-6"
             />
             {filtered.length === 0 ? (
               <EmptyState icon={Briefcase} title="No jobs found" description="Try adjusting your filters." />
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {filtered.map((job, i) => (
                   <JobCard key={job.id} job={job} index={i} onView={setSelectedJob} />
                 ))}

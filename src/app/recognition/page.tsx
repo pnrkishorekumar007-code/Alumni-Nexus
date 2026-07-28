@@ -66,14 +66,14 @@ export default function RecognitionPage() {
 
   return (
     <PublicLayout>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
         <PageHeader
           title="Recognition"
           description="Celebrating outstanding achievements of SRM alumni worldwide"
           breadcrumbs={[{ label: "Recognition" }]}
         />
 
-        <div className="gradient-hero rounded-2xl p-8 mb-10 text-white text-center">
+        <div className="gradient-hero rounded-2xl p-6 mb-8 text-white text-center">
           <Trophy className="h-12 w-12 text-accent mx-auto mb-4" />
           <h2 className="text-2xl font-bold">Hall of Fame</h2>
           <p className="mt-2 text-blue-100 max-w-xl mx-auto">
@@ -91,9 +91,9 @@ export default function RecognitionPage() {
             ))}
           </TabsList>
 
-          {categories.map((cat) => (
-            <TabsContent key={cat.key} value={cat.key} className="mt-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {categories.map((cat) => (
+            <TabsContent key={cat.key} value={cat.key} className="mt-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {(cat.key === activeCategory ? filtered : []).map((alumni) => (
                   <AchievementCard key={alumni.id} alumni={alumni} />
                 ))}
@@ -102,9 +102,9 @@ export default function RecognitionPage() {
           ))}
         </Tabs>
 
-        <section className="mt-16">
+        <section className="mt-10">
           <h2 className="text-2xl font-bold mb-6">Featured Alumni</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {allAlumni.slice(0, 4).map((a, i) => (
               <AlumniCard key={a.id} alumni={a} index={i} />
             ))}

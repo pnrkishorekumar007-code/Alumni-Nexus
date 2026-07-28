@@ -32,7 +32,7 @@ export default function AlumniDashboardPage() {
         breadcrumbs={[{ label: "Alumni Dashboard" }]}
       />
 
-      <Card className="glass-card mb-8">
+      <Card className="glass-card mb-6">
         <CardContent className="p-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
@@ -47,14 +47,14 @@ export default function AlumniDashboardPage() {
         </CardContent>
       </Card>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
         <StatCard label="Students Mentored" value={156} change="+12 this month" trend="up" icon={HeartHandshake} delay={0} />
         <StatCard label="Events Joined" value={23} change="3 upcoming" trend="up" icon={Calendar} delay={0.1} />
         <StatCard label="Posts" value={47} change="+5 this week" trend="up" icon={FileText} delay={0.2} />
         <StatCard label="Achievements" value={8} change="2 new badges" trend="up" icon={Award} delay={0.3} />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         <Card className="glass-card">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">

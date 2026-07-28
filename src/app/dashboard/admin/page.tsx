@@ -35,7 +35,7 @@ export default function AdminDashboardPage() {
         breadcrumbs={[{ label: "Admin Dashboard" }]}
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3 mb-6">
         <StatCard label="Users" value="52,340" change="+1,240 this month" trend="up" icon={Users} delay={0} />
         <StatCard label="Departments" value={10} change="All active" trend="neutral" icon={Building2} delay={0.05} />
         <StatCard label="Events" value={48} change="12 upcoming" trend="up" icon={Calendar} delay={0.1} />
@@ -44,7 +44,7 @@ export default function AdminDashboardPage() {
         <StatCard label="Reports" value={24} change="3 pending review" trend="neutral" icon={FileText} delay={0.25} />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-6">
         <Card className="glass-card lg:col-span-2">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
@@ -80,7 +80,7 @@ export default function AdminDashboardPage() {
         </Card>
       </div>
 
-      <Card className="glass-card mb-8">
+      <Card className="glass-card mb-6">
         <CardHeader>
           <CardTitle>Department Statistics</CardTitle>
         </CardHeader>
@@ -98,7 +98,7 @@ export default function AdminDashboardPage() {
         </CardContent>
       </Card>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-6">
         <Card className="glass-card">
           <CardHeader>
             <CardTitle>Recent Registrations</CardTitle>

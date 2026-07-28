@@ -16,7 +16,7 @@ export function DashboardLayout({ children, role, userName, userAvatar }: Dashbo
     <div className="min-h-screen bg-background">
       <Navbar variant="dashboard" userName={userName} userAvatar={userAvatar} />
       <Sidebar links={links} />
-      <main className="lg:pl-64 pt-6 pb-12 transition-all duration-300">
+      <main className="lg:pl-64 pt-4 pb-8 transition-all duration-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {children}
         </div>

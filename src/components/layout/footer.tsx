@@ -5,8 +5,8 @@ import { BRAND } from "@/constants";
 export function Footer() {
   return (
     <footer className="border-t bg-primary text-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-accent-foreground">
@@ -62,7 +62,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-6 border-t border-white/20 pt-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-blue-200">
             © 2026 {BRAND.university}. All rights reserved.
           </p>

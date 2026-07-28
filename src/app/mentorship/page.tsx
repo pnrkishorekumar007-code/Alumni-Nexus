@@ -65,7 +65,7 @@ export default function MentorshipPage() {
 
   return (
     <PublicLayout>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
         <PageHeader
           title="Mentorship"
           description="Connect with experienced SRM alumni mentors for career guidance"
@@ -79,23 +79,23 @@ export default function MentorshipPage() {
             <TabsTrigger value="feedback">Feedback</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="mentors" className="mt-6">
-            <SearchBar value={search} onChange={setSearch} placeholder="Search mentors by name or expertise..." showFilter={false} className="mb-8" />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <TabsContent value="mentors" className="mt-4">
+            <SearchBar value={search} onChange={setSearch} placeholder="Search mentors by name or expertise..." showFilter={false} className="mb-6" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {mentors.map((mentor, i) => (
                 <MentorCard key={mentor.id} mentor={mentor} index={i} onBook={setSelectedMentor} />
               ))}
             </div>
           </TabsContent>
 
-          <TabsContent value="history" className="mt-6">
+          <TabsContent value="history" className="mt-4">
             <Card className="glass-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Clock className="h-5 w-5" /> Past Sessions
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-3">
                 {sessionHistory.map((session) => (
                   <div key={`${session.mentor}-${session.date}`} className="flex items-center justify-between p-4 rounded-lg border hover:bg-muted/50 transition-colors">
                     <div>
@@ -114,15 +114,15 @@ export default function MentorshipPage() {
             </Card>
           </TabsContent>
 
-          <TabsContent value="feedback" className="mt-6">
+          <TabsContent value="feedback" className="mt-4">
             <Card className="glass-card">
-              <CardContent className="p-8 text-center">
+              <CardContent className="p-6 text-center">
                 <MessageSquare className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                 <h3 className="font-semibold text-lg">Share Your Experience</h3>
                 <p className="text-muted-foreground mt-2 max-w-md mx-auto">
                   Your feedback helps improve the mentorship program for future students.
                 </p>
-                <Button className="mt-6">Submit Feedback</Button>
+                <Button className="mt-4">Submit Feedback</Button>
               </CardContent>
             </Card>
           </TabsContent>

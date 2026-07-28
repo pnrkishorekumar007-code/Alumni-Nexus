@@ -23,13 +23,13 @@ export function StatCard({ label, value, change, trend, icon: Icon, className, d
       transition={{ delay, duration: 0.4 }}
     >
       <Card className={cn("glass-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300", className)}>
-        <CardContent className="p-6">
+        <CardContent className="p-5">
           <div className="flex items-start justify-between">
             <div>
               <p className="text-sm font-medium text-muted-foreground">{label}</p>
-              <p className="mt-2 text-3xl font-bold tracking-tight">{value}</p>
+              <p className="mt-1.5 text-2xl font-bold tracking-tight">{value}</p>
               {change && (
-                <div className="mt-2 flex items-center gap-1 text-xs">
+                <div className="mt-1.5 flex items-center gap-1 text-xs">
                   {trend === "up" && <TrendingUp className="h-3 w-3 text-emerald-500" />}
                   {trend === "down" && <TrendingDown className="h-3 w-3 text-red-500" />}
                   <span className={cn(

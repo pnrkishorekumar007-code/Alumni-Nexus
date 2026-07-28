@@ -60,7 +60,7 @@ export default function SettingsPage() {
           <TabsTrigger value="account" className="gap-1"><Key className="h-3.5 w-3.5" /> Account</TabsTrigger>
         </TabsList>
 
-        <TabsContent value="profile" className="mt-6">
+        <TabsContent value="profile" className="mt-4">
           <Card className="glass-card">
             <CardHeader>
               <CardTitle>Profile Settings</CardTitle>
@@ -104,7 +104,7 @@ export default function SettingsPage() {
           </Card>
         </TabsContent>
 
-        <TabsContent value="notifications" className="mt-6">
+        <TabsContent value="notifications" className="mt-4">
           <Card className="glass-card">
             <CardHeader>
               <CardTitle>Notification Settings</CardTitle>
@@ -130,7 +130,7 @@ export default function SettingsPage() {
           </Card>
         </TabsContent>
 
-        <TabsContent value="privacy" className="mt-6">
+        <TabsContent value="privacy" className="mt-4">
           <Card className="glass-card">
             <CardHeader>
               <CardTitle>Privacy Settings</CardTitle>
@@ -155,7 +155,7 @@ export default function SettingsPage() {
           </Card>
         </TabsContent>
 
-        <TabsContent value="theme" className="mt-6">
+        <TabsContent value="theme" className="mt-4">
           <Card className="glass-card">
             <CardHeader>
               <CardTitle>Theme Settings</CardTitle>
@@ -173,7 +173,7 @@ export default function SettingsPage() {
           </Card>
         </TabsContent>
 
-        <TabsContent value="account" className="mt-6">
+        <TabsContent value="account" className="mt-4">
           <Card className="glass-card">
             <CardHeader>
               <CardTitle>Account Settings</CardTitle>
@@ -193,7 +193,7 @@ export default function SettingsPage() {
                 <Input type="password" placeholder="••••••••" />
               </div>
               <Button onClick={() => toast.success("Password updated!")}>Update Password</Button>
-              <div className="pt-6 border-t">
+              <div className="pt-5 border-t">
                 <p className="text-sm font-medium text-destructive">Danger Zone</p>
                 <p className="text-xs text-muted-foreground mt-1">Permanently delete your account and all data</p>
                 <Button variant="destructive" size="sm" className="mt-3" onClick={() => toast.error("Account deletion is disabled in demo mode")}>

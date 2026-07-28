@@ -27,14 +27,14 @@ export default function CommunityPage() {
 
   return (
     <PublicLayout>
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-6">
         <PageHeader
           title="Community"
           description="Share updates, celebrate milestones, and connect with the SRM network"
           breadcrumbs={[{ label: "Community" }]}
         />
 
-        <Card className="glass-card mb-8">
+        <Card className="glass-card mb-6">
           <CardContent className="p-5">
             <div className="flex gap-3">
               <Avatar>
@@ -84,12 +84,12 @@ export default function CommunityPage() {
               <TrendingUp className="h-3 w-3" /> Trending
             </TabsTrigger>
           </TabsList>
-          <TabsContent value="feed" className="mt-6 space-y-4">
+          <TabsContent value="feed" className="mt-4 space-y-3">
             {posts.map((post, i) => (
               <PostCard key={post.id} post={post} index={i} />
             ))}
           </TabsContent>
-          <TabsContent value="trending" className="mt-6 space-y-4">
+          <TabsContent value="trending" className="mt-4 space-y-3">
             {trending.map((post, i) => (
               <PostCard key={post.id} post={post} index={i} />
             ))}

@@ -36,14 +36,14 @@ export default function StudentDashboardPage() {
         breadcrumbs={[{ label: "Student Dashboard" }]}
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
         <StatCard label="Mentor Requests" value={3} change="+1 this week" trend="up" icon={HeartHandshake} delay={0} />
         <StatCard label="Internship Applications" value={7} change="2 in review" trend="neutral" icon={GraduationCap} delay={0.1} />
         <StatCard label="Saved Alumni" value={24} change="+4 this month" trend="up" icon={Bookmark} delay={0.2} />
         <StatCard label="Upcoming Sessions" value={2} change="Next: Jul 22" trend="neutral" icon={Calendar} delay={0.3} />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-6">
         <Card className="glass-card lg:col-span-2">
           <CardHeader>
             <CardTitle>Mentorship Activity</CardTitle>

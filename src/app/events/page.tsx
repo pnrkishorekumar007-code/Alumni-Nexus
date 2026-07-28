@@ -36,7 +36,7 @@ export default function EventsPage() {
 
   return (
     <PublicLayout>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
         <PageHeader
           title="Events"
           description="Reunions, workshops, webinars, and symposiums across the SRM alumni network"
@@ -49,7 +49,7 @@ export default function EventsPage() {
             <TabsTrigger value="past">Past Events ({past.length})</TabsTrigger>
           </TabsList>
 
-          <div className="flex flex-wrap gap-2 mt-6 mb-8">
+          <div className="flex flex-wrap gap-2 mt-4 mb-6">
             <Button variant={activeType === "all" ? "default" : "outline"} size="sm" onClick={() => setActiveType("all")}>
               All
             </Button>
@@ -64,7 +64,7 @@ export default function EventsPage() {
             {filterByType(upcoming).length === 0 ? (
               <EmptyState icon={Calendar} title="No upcoming events" description="Check back soon for new events." />
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {filterByType(upcoming).map((event, i) => (
                   <div key={event.id} onClick={() => setSelectedEvent(event)} className="cursor-pointer">
                     <EventCard event={event} index={i} />

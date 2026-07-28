@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import { Providers } from "@/components/providers";
 import { BRAND } from "@/constants";
 import "./globals.css";
@@ -7,6 +7,12 @@ import "./globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} h-full`}>
+    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${poppins.variable} h-full`}>
       <body className="min-h-full flex flex-col font-sans antialiased">
         <Providers>{children}</Providers>
       </body>

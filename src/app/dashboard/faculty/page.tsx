@@ -43,8 +43,8 @@ export default function FacultyDashboardPage() {
               type="bar"
               xKey="name"
               dataKeys={[
-                { key: "students", color: "#003DA5", name: "Students" },
-                { key: "alumni", color: "#FFC72C", name: "Alumni" },
+                { key: "students", color: "#0a2472", name: "Students" },
+                { key: "alumni", color: "#d4af37", name: "Alumni" },
               ]}
             />
           </CardContent>
@@ -60,8 +60,8 @@ export default function FacultyDashboardPage() {
               type="line"
               xKey="year"
               dataKeys={[
-                { key: "rate", color: "#003DA5", name: "Placement %" },
-                { key: "avgPackage", color: "#FFC72C", name: "Avg Package (LPA)" },
+                { key: "rate", color: "#0a2472", name: "Placement %" },
+                { key: "avgPackage", color: "#d4af37", name: "Avg Package (LPA)" },
               ]}
             />
           </CardContent>

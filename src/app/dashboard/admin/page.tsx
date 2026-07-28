@@ -56,8 +56,8 @@ export default function AdminDashboardPage() {
             <Chart
               data={userGrowthData}
               dataKeys={[
-                { key: "students", color: "#003DA5", name: "Students" },
-                { key: "alumni", color: "#FFC72C", name: "Alumni" },
+                { key: "students", color: "#0a2472", name: "Students" },
+                { key: "alumni", color: "#d4af37", name: "Alumni" },
                 { key: "faculty", color: "#10b981", name: "Faculty" },
               ]}
             />
@@ -73,7 +73,7 @@ export default function AdminDashboardPage() {
               data={placementStats}
               type="bar"
               xKey="year"
-              dataKeys={[{ key: "rate", color: "#003DA5", name: "Placement Rate %" }]}
+              dataKeys={[{ key: "rate", color: "#0a2472", name: "Placement Rate %" }]}
               height={250}
             />
           </CardContent>
@@ -90,8 +90,8 @@ export default function AdminDashboardPage() {
             type="bar"
             xKey="name"
             dataKeys={[
-              { key: "students", color: "#003DA5", name: "Students" },
-              { key: "placements", color: "#FFC72C", name: "Placement %" },
+              { key: "students", color: "#0a2472", name: "Students" },
+              { key: "placements", color: "#d4af37", name: "Placement %" },
             ]}
             height={250}
           />

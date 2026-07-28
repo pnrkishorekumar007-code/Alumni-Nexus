@@ -55,7 +55,7 @@ export function Sidebar({ links }: SidebarProps) {
 
   const sidebarContent = (
     <div className="flex h-full flex-col">
-      <div className={cn("flex items-center border-b p-4", collapsed ? "justify-center" : "justify-between")}>
+      <div className={cn("flex items-center border-b border-border p-4", collapsed ? "justify-center" : "justify-between")}>
         {!collapsed && (
           <div>
             <p className="text-sm font-bold text-primary">{BRAND.shortName}</p>
@@ -85,7 +85,7 @@ export function Sidebar({ links }: SidebarProps) {
                 "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all duration-200",
                 isActive
                   ? "bg-primary text-primary-foreground shadow-md"
-                  : "text-muted-foreground hover:bg-muted hover:text-foreground",
+                  : "text-muted-foreground hover:bg-primary/5 hover:text-primary",
                 collapsed && "justify-center px-2"
               )}
             >
@@ -103,7 +103,7 @@ export function Sidebar({ links }: SidebarProps) {
       <Button
         variant="outline"
         size="icon"
-        className="fixed bottom-4 left-4 z-40 lg:hidden shadow-lg"
+        className="fixed bottom-4 left-4 z-40 lg:hidden shadow-lg bg-primary text-primary-foreground border-primary"
         aria-label="Open menu"
         onClick={() => setMobileOpen(true)}
       >
@@ -121,7 +121,7 @@ export function Sidebar({ links }: SidebarProps) {
         initial={false}
         animate={{ width: collapsed ? 72 : 256 }}
         className={cn(
-          "fixed left-0 top-16 z-40 hidden h-[calc(100vh-4rem)] border-r bg-background lg:block",
+          "fixed left-0 top-16 z-40 hidden h-[calc(100vh-4rem)] border-r border-border bg-background lg:block",
           mobileOpen && "block !w-64"
         )}
       >
@@ -130,7 +130,7 @@ export function Sidebar({ links }: SidebarProps) {
 
       <motion.aside
         className={cn(
-          "fixed left-0 top-16 z-50 h-[calc(100vh-4rem)] w-64 border-r bg-background lg:hidden transition-transform duration-300",
+          "fixed left-0 top-16 z-50 h-[calc(100vh-4rem)] w-64 border-r border-border bg-background lg:hidden transition-transform duration-300",
           mobileOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >

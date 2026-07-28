@@ -49,11 +49,11 @@ export default function RegisterPage() {
             <GraduationCap className="h-10 w-10" />
             <div>
               <h1 className="text-xl font-bold">{BRAND.name}</h1>
-              <p className="text-blue-200 text-sm">{BRAND.shortName}</p>
+              <p className="text-white/70 text-sm">{BRAND.shortName}</p>
             </div>
           </div>
           <h2 className="text-2xl font-bold">Join 50,000+ SRM Alumni</h2>
-          <p className="mt-3 text-blue-100 text-sm leading-relaxed">
+          <p className="mt-3 text-white/70 text-sm leading-relaxed">
             Create your account to access mentorship, career opportunities, events, and the global SRM community.
           </p>
         </motion.div>

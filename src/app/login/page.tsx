@@ -48,11 +48,11 @@ export default function LoginPage() {
             </div>
             <div>
               <h1 className="text-2xl font-bold">{BRAND.name}</h1>
-              <p className="text-blue-200">{BRAND.shortName}</p>
+              <p className="text-white/70">{BRAND.shortName}</p>
             </div>
           </div>
           <h2 className="text-3xl font-bold leading-tight">Welcome back to your alumni network</h2>
-          <p className="mt-4 text-blue-100 leading-relaxed">
+          <p className="mt-4 text-white/70 leading-relaxed">
             Connect with mentors, discover career opportunities, and stay engaged with the SRM community.
           </p>
         </motion.div>

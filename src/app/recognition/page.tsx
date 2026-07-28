@@ -76,7 +76,7 @@ export default function RecognitionPage() {
         <div className="gradient-hero rounded-2xl p-6 mb-8 text-white text-center">
           <Trophy className="h-12 w-12 text-accent mx-auto mb-4" />
           <h2 className="text-2xl font-bold">Hall of Fame</h2>
-          <p className="mt-2 text-blue-100 max-w-xl mx-auto">
+          <p className="mt-2 text-white/70 max-w-xl mx-auto">
             Honoring alumni who have made exceptional contributions to industry, research, entrepreneurship, and society.
           </p>
         </div>

@@ -61,14 +61,14 @@ export default function LandingPage() {
               transition={{ duration: 0.6 }}
               className="max-w-3xl"
             >
-              <Badge className="mb-6 bg-accent/20 text-accent border-accent/30 hover:bg-accent/30">
+              <Badge className="mb-6 bg-white/15 text-white border-white/25 hover:bg-white/20">
                 <Sparkles className="h-3 w-3 mr-1" /> SRM Institute of Science and Technology
               </Badge>
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl leading-tight">
                 {BRAND.name}
               </h1>
               <p className="mt-2 text-xl text-accent font-medium">{BRAND.shortName}</p>
-              <p className="mt-6 text-lg text-blue-100 leading-relaxed max-w-2xl">
+              <p className="mt-6 text-lg text-white/80 leading-relaxed max-w-2xl">
                 {BRAND.tagline}. Connect with 50,000+ alumni across 80+ countries. Find mentors, discover opportunities, and grow together.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
@@ -101,7 +101,7 @@ export default function LandingPage() {
                         <p className="text-2xl font-bold">
                           <AnimatedCounter value={stat.value} suffix={stat.suffix} />
                         </p>
-                        <p className="text-sm text-blue-100 mt-1">{stat.label}</p>
+                        <p className="text-sm text-white/70 mt-1">{stat.label}</p>
                       </CardContent>
                     </Card>
                   </motion.div>
@@ -227,7 +227,7 @@ export default function LandingPage() {
         <section className="gradient-hero py-14 text-white">
           <div className="mx-auto max-w-3xl px-4 text-center">
             <h2 className="text-2xl font-bold">Ready to Connect?</h2>
-            <p className="mt-3 text-blue-100 text-lg">
+            <p className="mt-3 text-white/80 text-lg">
               Join thousands of SRM alumni, students, and faculty building meaningful connections every day.
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-4">

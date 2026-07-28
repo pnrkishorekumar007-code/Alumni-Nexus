@@ -29,7 +29,7 @@ export function Navbar({ variant = "public", userName, userAvatar }: NavbarProps
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-primary-dark/20 bg-primary">
+    <header className="sticky top-0 z-50 w-full border-b border-black/10 bg-primary">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2 group">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-accent-foreground transition-transform group-hover:scale-105">
@@ -37,7 +37,7 @@ export function Navbar({ variant = "public", userName, userAvatar }: NavbarProps
           </div>
           <div className="hidden sm:block">
             <p className="text-sm font-bold leading-tight text-white">{BRAND.shortName}</p>
-            <p className="text-[10px] text-blue-200 leading-tight">Alumni Nexus</p>
+            <p className="text-[10px] text-white/70 leading-tight">Alumni Nexus</p>
           </div>
         </Link>
 

@@ -35,7 +35,7 @@ export default function AlumniProfilePage({ params }: { params: Promise<{ id: st
   if (!alumni) {
     return (
       <PublicLayout>
-        <div className="mx-auto max-w-7xl px-4 py-16">
+        <div className="mx-auto max-w-6xl px-4 py-16">
           <EmptyState
             icon={User}
             title="Alumni not found"

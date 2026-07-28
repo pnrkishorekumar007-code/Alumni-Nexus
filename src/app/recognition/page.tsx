@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getAlumni, getHallOfFame } from "@/lib/data";
 import type { Alumni } from "@/types";
+import Image from "next/image";
 
 const categories = [
   { key: "all", label: "Hall of Fame", icon: Trophy },
@@ -25,7 +26,7 @@ function AchievementCard({ alumni }: { alumni: Alumni }) {
       <div className="h-2 bg-gradient-to-r from-primary to-accent" />
       <CardContent className="p-6">
         <div className="flex items-start gap-4">
-          <img src={alumni.avatar} alt={alumni.name} className="h-16 w-16 rounded-full border-2 border-accent" />
+          <Image src={alumni.avatar} alt={alumni.name} width={64} height={64} className="h-16 w-16 rounded-full border-2 border-accent" unoptimized />
           <div className="flex-1">
             <h3 className="font-semibold text-lg">{alumni.name}</h3>
             <p className="text-sm text-primary">{alumni.currentRole}</p>

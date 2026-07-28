@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import type { Event } from "@/types";
 import { formatDate } from "@/lib/utils";
+import Image from "next/image";
 
 interface EventCardProps {
   event: Event;
@@ -31,7 +32,7 @@ export function EventCard({ event, index = 0 }: EventCardProps) {
     >
       <Card className="glass-card overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
         <div className="relative h-40 overflow-hidden">
-          <img src={event.image} alt={event.title} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          <Image src={event.image} alt={event.title} fill className="object-cover transition-transform duration-300 group-hover:scale-105" unoptimized />
           {event.featured && (
             <Badge variant="gold" className="absolute top-3 left-3">Featured</Badge>
           )}

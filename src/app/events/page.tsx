@@ -11,10 +11,11 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
-import { getEvents, getUpcomingEvents, getPastEvents } from "@/lib/data";
+import { getUpcomingEvents, getPastEvents } from "@/lib/data";
 import type { Event } from "@/types";
 import { formatDate } from "@/lib/utils";
 import { toast } from "sonner";
+import Image from "next/image";
 
 const eventTypes = ["workshop", "reunion", "webinar", "symposium", "networking"] as const;
 
@@ -24,7 +25,6 @@ export default function EventsPage() {
 
   const upcoming = getUpcomingEvents();
   const past = getPastEvents();
-  const allEvents = getEvents();
 
   const filterByType = (events: Event[]) =>
     activeType === "all" ? events : events.filter((e) => e.type === activeType);
@@ -95,7 +95,7 @@ export default function EventsPage() {
                 <DialogDescription>{selectedEvent.organizer}</DialogDescription>
               </DialogHeader>
               <div className="space-y-4 mt-4">
-                <img src={selectedEvent.image} alt={selectedEvent.title} className="w-full h-40 object-cover rounded-xl" />
+                <Image src={selectedEvent.image} alt={selectedEvent.title} width={400} height={160} className="w-full h-40 object-cover rounded-xl" unoptimized />
                 <div className="flex flex-wrap gap-2">
                   <Badge className="capitalize">{selectedEvent.type}</Badge>
                   <Badge variant="secondary">{selectedEvent.mode}</Badge>

@@ -1,0 +1,253 @@
+
+> srm-alumni-nexus@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.5.20
+   - Local:        http://localhost:3000
+   - Network:      http://10.233.97.97:3000
+
+ ✓ Starting...
+ ✓ Ready in 3.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 3.7s (1562 modules)
+ GET / 200 in 4974ms
+ GET / 200 in 716ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 685ms (878 modules)
+ GET /favicon.ico 200 in 974ms
+ GET / 200 in 495ms
+ GET / 200 in 611ms
+ ○ Compiling /register ...
+ ✓ Compiled /register in 5.5s (1913 modules)
+ GET /register 200 in 5846ms
+ GET /register 200 in 71ms
+ ○ Compiling /jobs ...
+ ✓ Compiled /jobs in 2.5s (1954 modules)
+ GET / 200 in 2010ms
+ GET /jobs 200 in 3933ms
+ GET /register 200 in 63ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 918ms (1946 modules)
+ GET /login 200 in 1167ms
+ ○ Compiling /dashboard/student ...
+ ✓ Compiled /dashboard/alumni in 7s (2990 modules)
+ GET /dashboard/alumni 200 in 1918ms
+ GET /dashboard/student 200 in 7477ms
+ GET /dashboard/student 200 in 80ms
+ GET /dashboard/student 200 in 80ms
+ GET /dashboard/student 200 in 93ms
+ GET /dashboard/student 200 in 1201ms
+ GET /jobs 200 in 63ms
+ GET / 200 in 50ms
+ GET /register 200 in 51ms
+ GET /login 200 in 46ms
+ GET /dashboard/student 200 in 40ms
+ GET /jobs 200 in 33ms
+ GET / 200 in 33ms
+ GET /register 200 in 69ms
+ GET /login 200 in 38ms
+ GET /dashboard/alumni 200 in 41ms
+ GET /jobs 200 in 34ms
+ GET / 200 in 34ms
+ ○ Compiling /alumni ...
+ ✓ Compiled /alumni in 1293ms (3003 modules)
+ GET /alumni 200 in 1510ms
+ ○ Compiling /alumni/[id] ...
+ ⚠ ./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Linkedin' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Linkedin').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Linkedin' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Linkedin').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+ GET /alumni/alumni-002 200 in 3587ms
+ GET /alumni/alumni-002 200 in 87ms
+ ⚠ ./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Linkedin' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Linkedin').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Linkedin' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Linkedin').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /alumni 200 in 1614ms
+ ⚠ ./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Linkedin' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Linkedin').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Linkedin' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Linkedin').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+ ⚠ ./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Linkedin' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Linkedin').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Linkedin' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Linkedin').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+ ⚠ ./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Linkedin' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Linkedin').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Linkedin' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Linkedin').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+
+./src/app/alumni/[id]/page.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=Award,BookOpen,Building2,ExternalLink,FolderGit2,Github,Globe,Linkedin,Mail,MapPin!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./src/app/alumni/[id]/page.tsx
+ GET /favicon.ico 200 in 1674ms
+ ✓ Compiled /favicon.ico in 1658ms (3023 modules)
+ GET /alumni 200 in 658ms
+ ✓ Compiled in 1230ms (3025 modules)
+ GET /alumni 200 in 317ms
+ ✓ Compiled in 1495ms (3025 modules)
+ GET /alumni 200 in 173ms
+ ✓ Compiled in 516ms (1439 modules)
+ GET /alumni 200 in 100ms
+ ✓ Compiled in 452ms (1439 modules)
+ GET /alumni 200 in 68ms
+ ✓ Compiled in 595ms (1439 modules)
+ GET /alumni 200 in 93ms
+ ○ Compiling / ...
+ ✓ Compiled / in 958ms (1581 modules)
+ GET / 200 in 2077ms
+ GET / 200 in 1065ms
+ ○ Compiling /register ...
+ ✓ Compiled /register in 2.5s (1581 modules)
+ GET /register 200 in 2963ms
+ GET /alumni 200 in 489ms
+ ○ Compiling /jobs ...
+ ✓ Compiled /jobs in 1482ms (1593 modules)
+ GET /jobs 200 in 1652ms
+ ○ Compiling /events ...
+ ✓ Compiled /events in 2.3s (3029 modules)
+ GET /events 200 in 2631ms
+ ○ Compiling /community ...
+ ✓ Compiled /community in 1349ms (3047 modules)
+ GET /community 200 in 1500ms
+ ○ Compiling /recognition ...
+ ✓ Compiled /recognition in 1480ms (2460 modules)
+ GET /recognition 200 in 1626ms
+ ✓ Compiled /register in 344ms (1080 modules)
+ GET /register 200 in 464ms
+ ✓ Compiled /login in 386ms (1073 modules)
+ GET /login 200 in 527ms
+ ○ Compiling /dashboard/alumni ...
+ ✓ Compiled /dashboard/alumni in 715ms (1585 modules)
+ GET /dashboard/alumni 200 in 843ms
+ ✓ Compiled /jobs in 492ms (1591 modules)
+ GET /jobs 200 in 670ms
+ GET /jobs 200 in 44ms
+ GET /jobs 200 in 43ms
+ GET /events 200 in 54ms
+ GET /community 200 in 86ms
+ GET /recognition 200 in 50ms
+ ○ Compiling /alumni ...
+ ✓ Compiled /alumni in 1069ms (1599 modules)
+ GET /alumni 200 in 1227ms
+ GET /jobs 200 in 2261ms
+ ✓ Compiled in 16.7s (3029 modules)
+ ✓ Compiled in 1427ms (3029 modules)
+ ✓ Compiled in 1422ms (1460 modules)
+ ✓ Compiled in 834ms (1460 modules)
+ ✓ Compiled in 3s (1476 modules)
+ ✓ Compiled in 1348ms (1476 modules)
+ ✓ Compiled in 567ms (1476 modules)
+ ✓ Compiled in 782ms (1476 modules)
+ ✓ Compiled in 1188ms (1476 modules)
+ ✓ Compiled in 653ms (1476 modules)
+ ✓ Compiled in 543ms (1476 modules)
+ ✓ Compiled in 584ms (1476 modules)
+ ✓ Compiled in 500ms (1476 modules)
+ ✓ Compiled in 598ms (1476 modules)
+ ✓ Compiled in 2.5s (3045 modules)
+ ✓ Compiled in 2.3s (3062 modules)
+ ✓ Compiled in 591ms (1476 modules)
+ ✓ Compiled in 712ms (1476 modules)
+ ✓ Compiled in 712ms (1476 modules)
+ ✓ Compiled in 635ms (1476 modules)
+ ✓ Compiled in 586ms (1475 modules)
+ ✓ Compiled in 738ms (1476 modules)
+ ✓ Compiled in 3.4s (3062 modules)
+ ✓ Compiled in 4.1s (3062 modules)
+ ✓ Compiled in 1010ms (3062 modules)
+ ✓ Compiled in 1406ms (3062 modules)
+ ✓ Compiled in 1910ms (1476 modules)
+ ✓ Compiled in 540ms (1476 modules)

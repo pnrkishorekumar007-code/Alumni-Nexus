@@ -23,6 +23,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getAlumniById } from "@/lib/data";
+import Image from "next/image";
 
 const profileAlumni = getAlumniById("alumni-001");
 
@@ -46,7 +47,7 @@ export default function ProfilePage() {
 
       <Card className="glass-card overflow-hidden mb-8">
         <div className="h-40 sm:h-52 bg-gradient-to-r from-primary/30 to-primary/10 relative">
-          <img src={alumni.coverImage} alt="" className="w-full h-full object-cover opacity-60" />
+          <Image src={alumni.coverImage} alt={`${alumni.name} cover photo`} fill className="object-cover opacity-60" unoptimized />
         </div>
         <CardContent className="relative px-6 pb-6">
           <Avatar className="h-24 w-24 -mt-12 border-4 border-background shadow-lg">
@@ -172,8 +173,8 @@ export default function ProfilePage() {
                 <CardContent className="p-6">
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {[alumni.coverImage, alumni.avatar, alumni.coverImage].map((img, i) => (
-                      <div key={i} className="aspect-square rounded-xl overflow-hidden">
-                        <img src={img} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                      <div key={i} className="relative aspect-square rounded-xl overflow-hidden">
+                        <Image src={img} alt={`Gallery image ${i + 1}`} fill className="object-cover hover:scale-105 transition-transform duration-300" unoptimized />
                       </div>
                     ))}
                   </div>

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { motion } from "framer-motion";
@@ -29,10 +29,12 @@ type RegisterForm = z.infer<typeof registerSchema>;
 
 export default function RegisterPage() {
   const router = useRouter();
-  const { register, handleSubmit, setValue, watch, formState: { errors, isSubmitting } } = useForm<RegisterForm>({
+  const { register, handleSubmit, setValue, control, formState: { errors, isSubmitting } } = useForm<RegisterForm>({
     resolver: zodResolver(registerSchema),
     defaultValues: { role: "student" },
   });
+
+  const watchedRole = useWatch({ control, name: "role" });
 
   const onSubmit = () => {
     toast.success("Account created! Please verify your email.");
@@ -94,7 +96,7 @@ export default function RegisterPage() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label>Role</Label>
-                    <Select value={watch("role")} onValueChange={(v) => setValue("role", v as RegisterForm["role"])}>
+                    <Select value={watchedRole} onValueChange={(v) => setValue("role", v as RegisterForm["role"])}>
                       <SelectTrigger><SelectValue /></SelectTrigger>
                       <SelectContent>
                         <SelectItem value="student">Student</SelectItem>

@@ -8,6 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import type { Post } from "@/types";
 import { formatRelativeTime } from "@/lib/utils";
+import Image from "next/image";
 
 interface PostCardProps {
   post: Post;
@@ -53,8 +54,8 @@ export function PostCard({ post, index = 0 }: PostCardProps) {
           <p className="mt-4 text-sm whitespace-pre-line leading-relaxed">{post.content}</p>
 
           {post.image && (
-            <div className="mt-4 rounded-xl overflow-hidden">
-              <img src={post.image} alt="" className="w-full h-48 object-cover" />
+            <div className="relative mt-4 rounded-xl overflow-hidden">
+              <Image src={post.image} alt="Post image" width={400} height={192} className="w-full h-48 object-cover" unoptimized />
             </div>
           )}
 

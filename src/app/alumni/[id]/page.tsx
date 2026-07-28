@@ -24,6 +24,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getAlumniById } from "@/lib/data";
 import { User } from "lucide-react";
+import Image from "next/image";
 
 export default function AlumniProfilePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
@@ -49,6 +50,7 @@ export default function AlumniProfilePage({ params }: { params: Promise<{ id: st
     <PublicLayout>
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-8">
         <PageHeader
+          title={alumni.name}
           breadcrumbs={[
             { label: "Alumni Directory", href: "/alumni" },
             { label: alumni.name },
@@ -57,7 +59,7 @@ export default function AlumniProfilePage({ params }: { params: Promise<{ id: st
 
         <Card className="glass-card overflow-hidden mb-8">
           <div className="h-40 sm:h-52 bg-gradient-to-r from-primary/30 to-primary/10 relative">
-            <img src={alumni.coverImage} alt="" className="w-full h-full object-cover opacity-60" />
+            <Image src={alumni.coverImage} alt={`${alumni.name} cover photo`} fill className="object-cover opacity-60" unoptimized />
           </div>
           <CardContent className="relative px-6 pb-6">
             <Avatar className="h-24 w-24 -mt-12 border-4 border-background shadow-lg">

@@ -24,6 +24,7 @@ import { Badge } from "@/components/ui/badge";
 import { BRAND, STATS } from "@/constants";
 import { getFeaturedAlumni, getUpcomingEvents, getNews } from "@/lib/data";
 import { formatDate } from "@/lib/utils";
+import Image from "next/image";
 
 const statIcons = [Users, Globe, Building2, HeartHandshake];
 
@@ -170,7 +171,7 @@ export default function LandingPage() {
                 >
                   <Card className="glass-card overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <div className="flex flex-col sm:flex-row">
-                      <img src={item.image} alt={item.title} className="sm:w-48 h-40 sm:h-auto object-cover" />
+                      <Image src={item.image} alt={item.title} width={192} height={160} className="sm:w-48 h-40 sm:h-auto object-cover" unoptimized />
                       <CardContent className="p-5 flex flex-col justify-center">
                         <Badge variant="secondary" className="w-fit mb-2">{item.category}</Badge>
                         <h3 className="font-semibold">{item.title}</h3>

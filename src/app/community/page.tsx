@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Image, BarChart3, TrendingUp, Send } from "lucide-react";
+import { Image as ImageIcon, BarChart3, TrendingUp, Send } from "lucide-react";
 import { PublicLayout } from "@/components/layout/public-layout";
 import { PageHeader } from "@/components/shared/page-header";
 import { PostCard } from "@/components/cards/post-card";
@@ -63,7 +63,7 @@ export default function CommunityPage() {
                 <div className="flex items-center justify-between mt-3">
                   <div className="flex gap-2">
                     <Button variant="ghost" size="sm" className="gap-1" onClick={() => toast.info("Image upload (demo)")}>
-                      <Image className="h-4 w-4" /> Photo
+                      <ImageIcon className="h-4 w-4" /> Photo
                     </Button>
                     <Button variant="ghost" size="sm" className="gap-1" onClick={() => setShowPoll(!showPoll)}>
                       <BarChart3 className="h-4 w-4" /> Poll
